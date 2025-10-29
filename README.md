@@ -11,6 +11,7 @@ for the BIOS, you can dump decrypted from MAME debugger using "save filename,0,0
 
 here's an example of how I use it:
 
+`
 python split-and-encrypt.py
 
 7z a /roms/arcade/sfiii3nr1.zip sfiii3-simm1.?
@@ -22,3 +23,4 @@ rm *simm*
 rm sfiii3-binary-combined-and-encrypted-sfiii3nr1
 
 mame sfiii3nr1 -debug -sound none -nofilter -resolution0 768x448 -cheat -nokeepaspect
+`
